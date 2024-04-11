@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "target": "esnext",
+    "experimentalDecorators": true,
+    "noEmitOnError": false,
+    "importHelpers": true,
+    "strict": true,
+    "preserveSymlinks": true,
+    "downlevelIteration": true,
+    "isolatedModules": false,
+    "incremental": true,
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "types": ["node"],
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["./src/global.d.ts", "./node_modules/@types"],
+    "paths": {
+      "src/*": ["src/*"]
+    }
+  },
+  "include": ["src"]
+}
