@@ -1,0 +1,33 @@
+html,
+body {
+  background-color: #000;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#overlay {
+  position: absolute;
+  z-index: 1000;
+  top: 32px;
+  left: 32px;
+  color: white;
+  font-size: 48px;
+  text-shadow: 0 0 4px #000;
+}
+
+video {
+  outline: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
