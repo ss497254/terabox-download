@@ -1,8 +1,8 @@
 /** @type {chrome.runtime.ManifestV3} */
 export const manifest = {
-  name: "terabox-download",
-  short_name: "terabox-download",
-  description: "terabox-download",
+  name: "terabox-play",
+  short_name: "terabox-play",
+  description: "terabox-play",
   version: "1.0.0",
   manifest_version: 3,
   icons: {
