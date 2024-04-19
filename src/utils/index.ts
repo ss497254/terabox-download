@@ -9,3 +9,9 @@ export function formatFileSize(size: number) {
     return size + "B";
   }
 }
+
+export function formatTime(input: number) {
+  return [Math.floor(input / 3600), Math.floor((input % 3600) / 60), Math.floor(input % 60)]
+    .map((input) => (input < 10 ? "0" : "") + input)
+    .join(":");
+}
