@@ -40,13 +40,11 @@ function attachVideoPlayer({ src, poster, size }: any) {
       }
     },
     KeyD: function () {
-      if (video.controls) {
-        video.controls = false;
-        showMessage("Fullscreen: off");
-      } else {
-        video.controls = true;
-        showMessage("Fullscreen: on");
-      }
+      const a = document.createElement("a");
+      a.href = src;
+      a.download = "true";
+      a.click();
+      showMessage("Downloading...");
     },
     KeyF: function () {
       if (video.getAttribute("fullscreen") !== "true") {
