@@ -10,8 +10,9 @@ export function setHTML(title: string) {
       </style>
     </head>
     <body>
-      <div id="root">
-        <div id="overlay"></div>
-      </div>
+      <div id="message"></div>
+      <div id="info"></div>
+      <div id="wrapper"></div>
+      <div id="progress"></div>
     </body>`;
 }
