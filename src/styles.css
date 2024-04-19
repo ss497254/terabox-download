@@ -8,13 +8,40 @@ body {
   padding: 0;
 }
 
-#root {
+body {
+  position: relative;
+}
+
+#wrapper {
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-#overlay {
+video {
+  outline: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+#info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  padding: 20px;
+  color: white;
+  font-size: 32px;
+  white-space: pre-line;
+}
+
+#info:not(:empty) {
+  background-color: black;
+}
+
+#message {
   position: absolute;
   z-index: 1000;
   top: 32px;
@@ -24,10 +51,6 @@ body {
   text-shadow: 0 0 4px #000;
 }
 
-video {
-  outline: none;
+#progress-bar {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  margin: auto;
 }
